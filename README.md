@@ -1,13 +1,13 @@
 <a href="https://buymeacoffee.com/abdullaherturk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-# RustDesk ID & Server Changer
+# RustDesk ID & Server Changer v3
 
 RustDesk Github: https://github.com/rustdesk/rustdesk
 
 <details>
 <summary>🇹🇷 Türkçe</summary>
 
-Bu betik ile RustDesk ID bilgilerinizi ve Sunucu yapılandırmalarınızı dilediğiniz gibi değiştirebilirsiniz. Betik, işletim sisteminizin dilini otomatik olarak algılayıp arayüzünü ona göre (Türkçe veya İngilizce) ayarlar.
+Bu betik ile RustDesk ID bilgilerinizi ve Sunucu yapılandırmalarınızı dilediğiniz gibi değiştirebilirsiniz. Betik, işletim sisteminizin dilini otomatik olarak algılayıp arayüzünü ona göre (Türkçe veya İngilizce) ayarlar. Aynı zamanda taşınabilir (portable) RustDesk sürümleriyle de uyumlu çalışacak şekilde güncellenmiştir.
 
 Betiğin sunduğu seçenekler için detaylı açıklamalar:
 
@@ -18,7 +18,7 @@ Bu seçenek ile RustDesk uzak bağlantı programının ID bilgisi otomatik olara
 **2. "RustDesk ID'sini 9 haneli rastgele sayılarla değiştir"**
 Bu seçenek ile RustDesk uzak bağlantı programının ID bilgisi 9 haneli rastgele rakamlardan oluşturulacak bir değere dönüştürülür. Yeniden başlatmaya gerek yoktur.
 
-**3. "RustDesk ID'sini belirteceğiniz bir değer yapın"**
+**3. "RustDesk ID'sini belirttiğiniz değere ayarlayın."**
 Bu seçenek ile RustDesk uzak bağlantı programının ID bilgisi tamamen kullanıcının belirteceği bir değere dönüştürülür. Yeniden başlatmaya gerek yoktur.
 
 **4. "Public Sunucuya Geç (Özel Sunucu Bilgisini Temizle)"**
@@ -27,14 +27,20 @@ Eğer aktif bir özel sunucu yapılandırmanız varsa, bu seçenek bu ayarları 
 **5. "Private Sunucuya Geç (Özel Sunucu Bilgisini Uygula)"**
 Bu seçenek, daha önce yedeklenmiş olan özel sunucu ayarlarınızı bularak geri yükler ve manuel herhangi bir ayar yapmanıza gerek kalmadan Özel sunucunuza sorunsuz bir şekilde geri dönmenizi sağlar. Eğer sistemde özel bir sunucu yedeği yoksa sizi ilk olarak ayarlarınızı girmeniz konusunda uyarır.
 
-Tüm komut dosyaları Windows 7, 8.1, 10 ve 11'de test edilmiştir.
+**6. "Yeni Özel Sunucu Tanımla"**
+Daha önce girilmiş hiçbir özel sunucu ayarınız yoksa veya yepyeni bir sunucu eklemek istiyorsanız bu seçeneği kullanabilirsiniz. Sizden sadece Sunucu IP/Host adresini ve Key bilgisini isteyip konfigürasyonu tamamlar. Standart API portlarıyla (21114 vb.) tam uyumlu çalışır.
+
+**7. "Private Sunucu Yedeklerini Sil"**
+Bu seçenek, bilgisayarınızda daha önceden saklanmış olan özel sunucu (Private Server) yedek yapılandırma dosyalarını tamamen temizler. Sunucu adresinizi değiştirmek veya sistemde kayıtlı olan eski sunucu izlerini silip sıfırdan temiz bir kurulum yapmak istediğinizde kullanılır.
+
+Tüm komut dosyaları Windows 7, 8.1, 10 ve 11'de test edilmiştir (PowerShell 2.0 uyumlu).
 
 </details>
 
 <details>
 <summary>🇬🇧 English</summary>
 
-You will be able to change the RustDesk ID information and Server configurations as you wish with the script. The script automatically detects your OS language and adjusts its interface accordingly.
+You will be able to change the RustDesk ID information and Server configurations as you wish with the script. The script automatically detects your OS language and adjusts its interface accordingly. It has also been updated to be fully compatible with portable RustDesk versions.
 
 Detailed description for options in the script:
 
@@ -54,10 +60,16 @@ If you have a custom/private server configuration active, this option will back 
 **5. "Set Private Server (Apply Custom Server Info)"**
 This option checks for a previously backed-up custom server configuration and restores it, seamlessly switching you back to your Private server without manual configuration. If no backup is found, it will prompt you to log into your server first.
 
-All scripts are tested on Windows 7 - 8.1 - 10 and 11.
+**6. "Set New Private Server"**
+If you don't have a backup or you want to define a brand-new Private Server, use this option. It will ask for your base Server IP/Host and Key, and automatically configure RustDesk for you. It is fully compatible with standard API ports (like 21114).
+
+**7. "Delete Private Server Backups"**
+This option completely clears the previously saved Private Server backup configuration files on your computer. It is very useful when you want to change your server address or completely remove the traces of the old server to start with a clean slate.
+
+All scripts are tested on Windows 7 - 8.1 - 10 and 11 (PowerShell 2.0 compatible).
 
 </details>
 
 Sample preview:
 
-![sample](https://github.com/abdullah-erturk/RustDesk-ID-Changer/blob/main/RustDesk_ID_Changer.jpg)
+![sample](https://github.com/abdullah-erturk/RustDesk-ID-Changer/blob/main/preview.jpg)
